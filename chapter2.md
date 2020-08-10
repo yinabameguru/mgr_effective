@@ -49,3 +49,14 @@
 - 消除过期引用是一种规范行为吗？最好的实践方法是什么呢？
 - 现内存泄漏有哪些常见来源？
 - 讲一讲WeakHashMap？
+
+**8.避免使用finalizer和cleaner**
+
+- 为什么不建议使用？
+- 举一个使用finalizer导致异常的例子？
+- 讲讲安全问题？
+- 如何防止非final类受到终结方法攻击？
+- 讲一讲AutoCloseable？
+- finalizer和cleaner有什么好处？
+- 讲一讲安全网?
+- 什么情况下使用finalizer和cleaner？
