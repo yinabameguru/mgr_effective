@@ -60,3 +60,7 @@
 - finalizer和cleaner有什么好处？
 - 讲一讲安全网?
 - 什么情况下使用finalizer和cleaner？
+
+**9.try-with-resources优先于try-finally**
+
+- 底层设备异常时，使用try-tinally会导致什么问题？
