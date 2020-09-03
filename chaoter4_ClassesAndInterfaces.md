@@ -72,3 +72,41 @@
 - 讲一讲decorator？
 - 什么是is-a关系？jdk中有哪些违反is-a原则的地方？
 
+**19.要么设计继承并提供文档说明，要么禁止继承**
+
+- 在设计继承体系时，为什么要对publish、protect方法提供文档说明？需要说明哪些内容？
+- 讲一讲java8的新注解@apiNote、@implSpec、@inplNote？
+
+-  执行方法aa输出的结果是什么？
+
+  ```java
+  class Super {
+  
+      public Super() {
+          overrideMe();
+      }
+  
+      public void overrideMe() {
+  
+      }
+  
+  }
+  
+  final class Sub extends Super {
+      private final Instant instant;
+  
+      Sub() {
+          instant = Instant.now();
+      }
+  
+      public void overrideMe() {
+          System.out.println(instant);
+      }
+  }
+  
+  public void aa() {
+      new Sub().overrideMe();
+  }
+  ```
+
+- 为继承而设计的类在序列化或者克隆时要注意什么？
